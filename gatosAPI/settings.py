@@ -128,3 +128,6 @@ STATIC_URL = '/static/'
 GRAPHENE = {
     'SCHEMA': 'gatosAPI.schema.schema'
 }
+
+import django_heroku
+django_heroku.settings(locals())
