@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'gatosAPI.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'gatos',
+        'NAME': 'gatosdjango',
         'USER': 'postgres',
         'PASSWORD' : '261003',
         'HOST' : 'localhost',
@@ -128,6 +128,3 @@ STATIC_URL = '/static/'
 GRAPHENE = {
     'SCHEMA': 'gatosAPI.schema.schema'
 }
-
-import django_heroku
-django_heroku.settings(locals())
